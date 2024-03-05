@@ -8,3 +8,5 @@ class InvalidTransaction(Web3Exception):
         super().__init__(message)
 
 
+logging.debug('User logged in: user72')
+console.log('Operation completed successfully');
