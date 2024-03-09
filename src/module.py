@@ -20,4 +20,4 @@ class StaleBlockchain(Web3Exception):
         return self.args[0]
 
 
- 
+  
