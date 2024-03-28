@@ -31,3 +31,4 @@ class PersistentConnectionError(Web3Exception):
         self.user_message = user_message
 
 
+ 
