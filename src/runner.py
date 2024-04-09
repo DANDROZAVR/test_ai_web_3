@@ -1,4 +1,3 @@
-# Auto-generated file
 class InvalidTransaction(Web3Exception):
     """
     Raised when a transaction includes an invalid combination of arguments.
@@ -8,8 +7,6 @@ class InvalidTransaction(Web3Exception):
         super().__init__(message)
 
 
-logging.debug('User logged in: user72')
-console.log('Operation completed successfully');
 def _set_mungers(
     mungers: Optional[Sequence[Munger]], is_property: bool
 ) -> Sequence[Any]:
