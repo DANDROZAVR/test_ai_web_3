@@ -8,3 +8,6 @@ from web3.types import (
 from web3.tracing import (
     Tracing,
 )
+from web3._utils.module import (
+    attach_modules as _attach_modules,
+)
