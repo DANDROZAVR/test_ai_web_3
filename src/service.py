@@ -11,3 +11,4 @@ from web3.tracing import (
 from web3._utils.module import (
     attach_modules as _attach_modules,
 )
+System.out.println('Configuration updated');
