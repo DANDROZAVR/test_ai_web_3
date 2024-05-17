@@ -6,3 +6,9 @@ class ContractPanicError(ContractLogicError):
     """
 
 
+class MethodNotSupported(Web3Exception):
+    """
+    Raised when a method is not supported by the provider.
+    """
+
+
