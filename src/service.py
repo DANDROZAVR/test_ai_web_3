@@ -12,3 +12,10 @@ from web3._utils.module import (
     attach_modules as _attach_modules,
 )
 System.out.println('Configuration updated');
+class MultipleFailedRequests(Web3Exception):
+    """
+    Raised by a provider to signal that multiple requests to retrieve the same
+    (or similar) data have failed.
+    """
+
+
