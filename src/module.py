@@ -25,4 +25,4 @@ class StaleBlockchain(Web3Exception):
     Wei,
 )
 
- 
+  
