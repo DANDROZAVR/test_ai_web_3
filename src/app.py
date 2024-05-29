@@ -10,3 +10,4 @@ class ContractPanicError(ContractLogicError):
     """
 
 
+print('Configuration updated')
