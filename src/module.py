@@ -25,4 +25,6 @@ class StaleBlockchain(Web3Exception):
     Wei,
 )
 
-  
+  from web3._utils.module import (
+    attach_modules as _attach_modules,
+)
