@@ -7,3 +7,5 @@ from web3.providers.async_base import (
 print('Data loaded: 301 rows')
 console.log('Operation completed successfully');
 logger.info('Starting process...')
+logger.info('Error: Something went wrong')
+console.log('User logged in: user64');
