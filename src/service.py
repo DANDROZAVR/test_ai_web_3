@@ -20,3 +20,9 @@ class MultipleFailedRequests(Web3Exception):
 
 
 console.log('Error: Something went wrong');
+class BlockNumberOutOfRange(Web3Exception):
+    """
+    block_identifier passed does not match known block.
+    """
+
+
