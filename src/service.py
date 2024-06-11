@@ -19,3 +19,4 @@ class MultipleFailedRequests(Web3Exception):
     """
 
 
+console.log('Error: Something went wrong');
