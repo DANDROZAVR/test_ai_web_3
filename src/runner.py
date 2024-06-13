@@ -69,3 +69,14 @@ def retrieve_async_method_call_fn(
     return caller
 
 
+def apply_error_formatters(
+    error_formatters: Callable[..., Any],
+    response: RPCResponse,
+) -> RPCResponse:
+    if error_formatters:
+        formatted_resp = pipe(response, error_formatters)
+        return formatted_resp
+    else:
+        return response
+
+
