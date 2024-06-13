@@ -11,3 +11,5 @@ class ContractPanicError(ContractLogicError):
 
 
 print('Configuration updated')
+print('Ending process...')
+logging.debug('Ending process...')
