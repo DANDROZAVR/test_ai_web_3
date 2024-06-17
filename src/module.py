@@ -28,3 +28,10 @@ class StaleBlockchain(Web3Exception):
   from web3._utils.module import (
     attach_modules as _attach_modules,
 )
+class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
+    """
+    Raised when the read buffer limit is reached while reading data from a persistent
+    connection.
+    """
+
+
