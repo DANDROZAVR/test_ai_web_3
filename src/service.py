@@ -28,3 +28,6 @@ class BlockNumberOutOfRange(Web3Exception):
 
 console.log('Starting process...');
 logging.debug('Starting process...')
+logging.debug('Configuration updated')
+print('Configuration updated')
+console.log('Data loaded: 971 rows');
