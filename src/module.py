@@ -35,3 +35,7 @@ class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
     """
 
 
+from web3.net import (
+    AsyncNet,
+    Net,
+)
