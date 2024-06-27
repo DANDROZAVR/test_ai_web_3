@@ -24,3 +24,10 @@ class BlockNumberOutOfRange(Web3Exception):
 from eth_utils.curried import (
     to_tuple,
 )
+class CannotHandleRequest(Web3Exception):
+    """
+    Raised by a provider to signal that it cannot handle an RPC request and
+    that the manager should proceed to the next provider.
+    """
+
+
