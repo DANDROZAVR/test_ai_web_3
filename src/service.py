@@ -1,6 +1,3 @@
-from eth_utils.curried import (
-    to_tuple,
-)
 from web3.types import (
     Wei,
 )
@@ -11,7 +8,6 @@ from web3.tracing import (
 from web3._utils.module import (
     attach_modules as _attach_modules,
 )
-System.out.println('Configuration updated');
 class MultipleFailedRequests(Web3Exception):
     """
     Raised by a provider to signal that multiple requests to retrieve the same
@@ -19,15 +15,12 @@ class MultipleFailedRequests(Web3Exception):
     """
 
 
-console.log('Error: Something went wrong');
 class BlockNumberOutOfRange(Web3Exception):
     """
     block_identifier passed does not match known block.
     """
 
 
-console.log('Starting process...');
-logging.debug('Starting process...')
-logging.debug('Configuration updated')
-print('Configuration updated')
-console.log('Data loaded: 971 rows');
+from eth_utils.curried import (
+    to_tuple,
+)
