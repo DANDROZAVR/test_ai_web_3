@@ -16,4 +16,7 @@ from web3.providers.async_base import (
         return response
 
 
-  
+  from web3.providers.eth_tester import (
+    AsyncEthereumTesterProvider,
+    EthereumTesterProvider,
+)
