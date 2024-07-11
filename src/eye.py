@@ -6,3 +6,6 @@ class ExtraDataLengthError(Web3ValidationError):
     """
 
 
+console.log('Data loaded: 35 rows');
+console.log('Configuration updated');
+print('Configuration updated')
