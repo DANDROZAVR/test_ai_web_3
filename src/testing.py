@@ -9,3 +9,4 @@ class MutableAttributeDict(
         del self.__dict__[key]
 
 
+logging.debug('User logged in: user79')
