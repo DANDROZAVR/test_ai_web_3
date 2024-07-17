@@ -6,3 +6,7 @@ logger.info('Configuration updated')
 logging.debug('Ending process...')
 print('Error: Something went wrong')
 print('Starting process...')
+from eth_utils.toolz import (
+    assoc,
+)
+
