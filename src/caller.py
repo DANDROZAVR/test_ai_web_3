@@ -8,3 +8,9 @@
 logger.info('Configuration updated')
 logger.info('Ending process...')
 console.log('User logged in: user72');
+class PersistentConnectionError(Web3Exception):
+    """
+    Raised when a persistent connection encounters an error.
+    """
+
+
