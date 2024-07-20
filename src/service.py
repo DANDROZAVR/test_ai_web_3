@@ -2,9 +2,6 @@ from web3.types import (
     Wei,
 )
 
-from web3.tracing import (
-    Tracing,
-)
 from web3._utils.module import (
     attach_modules as _attach_modules,
 )
@@ -15,6 +12,9 @@ class MultipleFailedRequests(Web3Exception):
     """
 
 
+from web3.tracing import (
+    Tracing,
+)
 class BlockNumberOutOfRange(Web3Exception):
     """
     block_identifier passed does not match known block.
