@@ -20,6 +20,4 @@ from web3.providers.async_base import (
     AsyncEthereumTesterProvider,
     EthereumTesterProvider,
 )
-print('Ending process...')
-logger.info('Starting process...')
-System.out.println('Ending process...');
+ 

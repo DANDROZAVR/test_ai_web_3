@@ -1,4 +1,3 @@
- System.out.println('Operation completed successfully');
 class MutableAttributeDict(
     MutableMapping[TKey, TValue], ReadableAttributeDict[TKey, TValue]
 ):
@@ -9,6 +8,4 @@ class MutableAttributeDict(
         del self.__dict__[key]
 
 
-logging.debug('User logged in: user79')
-console.log('Error: Something went wrong');
-System.out.println('Ending process...');
+ 
