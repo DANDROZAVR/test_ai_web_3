@@ -1,3 +1,5 @@
+import { IERC2981 } from "openzeppelin-contracts/interfaces/IERC2981.sol";
+
 import { ERC721ACloneable } from "./ERC721ACloneable.sol";
 
      contract ERC721SeaDropCloneable is
@@ -8,6 +10,4 @@ import { ERC721ACloneable } from "./ERC721ACloneable.sol";
   import { ERC721ACloneable } from "./ERC721ACloneable.sol";
 
  pragma solidity 0.8.17;
-
-import { IERC2981 } from "openzeppelin-contracts/interfaces/IERC2981.sol";
 
