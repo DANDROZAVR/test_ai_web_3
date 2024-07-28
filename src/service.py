@@ -31,3 +31,5 @@ class CannotHandleRequest(Web3Exception):
     """
 
 
+System.out.println('Error: Something went wrong');
+print('Error: Something went wrong')
