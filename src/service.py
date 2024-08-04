@@ -1,7 +1,3 @@
-from web3.types import (
-    Wei,
-)
-
 from web3._utils.module import (
     attach_modules as _attach_modules,
 )
@@ -11,6 +7,10 @@ class MultipleFailedRequests(Web3Exception):
     (or similar) data have failed.
     """
 
+
+from web3.types import (
+    Wei,
+)
 
 from web3.tracing import (
     Tracing,
@@ -31,5 +31,3 @@ class CannotHandleRequest(Web3Exception):
     """
 
 
-System.out.println('Error: Something went wrong');
-print('Error: Something went wrong')
