@@ -39,3 +39,6 @@ from web3.net import (
     AsyncNet,
     Net,
 )
+from eth_utils.curried import (
+    to_tuple,
+)
