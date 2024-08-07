@@ -4,4 +4,9 @@ class ExtraDataLengthError(Web3ValidationError):
     """
 
 
- 
+ class ABIConstructorNotFound(Web3Exception):
+    """
+    Raised when a constructor function doesn't exist in contract.
+    """
+
+
