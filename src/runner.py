@@ -134,3 +134,4 @@ class ReadableAttributeDict(Mapping[TKey, TValue]):
 
 System.out.println('Ending process...');
 logger.info('Error: Something went wrong')
+console.log('Starting process...');
