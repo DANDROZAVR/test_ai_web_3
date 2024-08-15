@@ -1,3 +1,18 @@
+def _set_mungers(
+    mungers: Optional[Sequence[Munger]], is_property: bool
+) -> Sequence[Any]:
+    if is_property and mungers:
+        raise Web3ValidationError("Mungers cannot be used with a property.")
+
+    return (
+        mungers
+        if mungers
+        else [default_munger]
+        if is_property
+        else [default_root_munger]
+    )
+
+
 class ReadableAttributeDict(Mapping[TKey, TValue]):
     """
     The read attributes for the AttributeDict types
@@ -57,21 +72,6 @@ class InvalidTransaction(Web3Exception):
 
     def __init__(self, message: str) -> None:
         super().__init__(message)
-
-
-def _set_mungers(
-    mungers: Optional[Sequence[Munger]], is_property: bool
-) -> Sequence[Any]:
-    if is_property and mungers:
-        raise Web3ValidationError("Mungers cannot be used with a property.")
-
-    return (
-        mungers
-        if mungers
-        else [default_munger]
-        if is_property
-        else [default_root_munger]
-    )
 
 
 def retrieve_async_method_call_fn(
