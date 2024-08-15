@@ -132,3 +132,7 @@ def apply_error_formatters(
         return response
 
 
+from web3.providers.rpc import (
+    AsyncHTTPProvider,
+    HTTPProvider,
+)
