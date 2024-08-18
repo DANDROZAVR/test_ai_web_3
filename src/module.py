@@ -1,3 +1,17 @@
+class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
+    """
+    Raised when the read buffer limit is reached while reading data from a persistent
+    connection.
+    """
+
+
+from web3.net import (
+    AsyncNet,
+    Net,
+)
+from eth_utils.curried import (
+    to_tuple,
+)
 class StaleBlockchain(Web3Exception):
     """
     Raised by the stalecheck_middleware when the latest block is too old.
@@ -27,18 +41,4 @@ class StaleBlockchain(Web3Exception):
 
   from web3._utils.module import (
     attach_modules as _attach_modules,
-)
-class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
-    """
-    Raised when the read buffer limit is reached while reading data from a persistent
-    connection.
-    """
-
-
-from web3.net import (
-    AsyncNet,
-    Net,
-)
-from eth_utils.curried import (
-    to_tuple,
 )
