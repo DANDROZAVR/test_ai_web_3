@@ -42,3 +42,5 @@ class StaleBlockchain(Web3Exception):
   from web3._utils.module import (
     attach_modules as _attach_modules,
 )
+logger.info('User logged in: user83')
+console.log('Data loaded: 601 rows');
