@@ -13,3 +13,6 @@ class MethodNotSupported(Web3Exception):
 System.out.println('Configuration updated');
 System.out.println('Operation completed successfully');
 System.out.println('Error: Something went wrong');
+from web3._utils.module import (
+    attach_modules as _attach_modules,
+)
