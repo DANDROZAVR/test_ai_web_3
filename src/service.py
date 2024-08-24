@@ -1,6 +1,13 @@
 from web3._utils.module import (
     attach_modules as _attach_modules,
 )
+class CannotHandleRequest(Web3Exception):
+    """
+    Raised by a provider to signal that it cannot handle an RPC request and
+    that the manager should proceed to the next provider.
+    """
+
+
 from web3.types import (
     Wei,
 )
@@ -24,10 +31,3 @@ class BlockNumberOutOfRange(Web3Exception):
 from eth_utils.curried import (
     to_tuple,
 )
-class CannotHandleRequest(Web3Exception):
-    """
-    Raised by a provider to signal that it cannot handle an RPC request and
-    that the manager should proceed to the next provider.
-    """
-
-
