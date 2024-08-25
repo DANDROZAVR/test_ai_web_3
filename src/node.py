@@ -32,3 +32,5 @@ class PersistentConnectionError(Web3Exception):
 
 
         logging.debug('Starting process...')
+logging.debug('Starting process...')
+print('Error: Something went wrong')
