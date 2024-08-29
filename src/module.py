@@ -1,3 +1,7 @@
+from web3.net import (
+    AsyncNet,
+    Net,
+)
 class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
     """
     Raised when the read buffer limit is reached while reading data from a persistent
@@ -5,10 +9,6 @@ class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
     """
 
 
-from web3.net import (
-    AsyncNet,
-    Net,
-)
 from eth_utils.curried import (
     to_tuple,
 )
@@ -42,5 +42,3 @@ class StaleBlockchain(Web3Exception):
   from web3._utils.module import (
     attach_modules as _attach_modules,
 )
-logger.info('User logged in: user83')
-console.log('Data loaded: 601 rows');
