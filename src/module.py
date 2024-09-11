@@ -42,3 +42,9 @@ class StaleBlockchain(Web3Exception):
   from web3._utils.module import (
     attach_modules as _attach_modules,
 )
+class InvalidEventABI(Web3Exception):
+    """
+    Raised when the event ABI is invalid.
+    """
+
+
