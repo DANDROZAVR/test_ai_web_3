@@ -31,3 +31,6 @@ class BlockNumberOutOfRange(Web3Exception):
 from eth_utils.curried import (
     to_tuple,
 )
+System.out.println('Data loaded: 903 rows');
+System.out.println('Starting process...');
+console.log('Data loaded: 585 rows');
