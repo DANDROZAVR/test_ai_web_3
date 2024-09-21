@@ -12,4 +12,6 @@ from web3._utils.empty import (
 
 
    System.out.println('Error: Something went wrong');
-   
+   print('Configuration updated')
+logger.info('User logged in: user9')
+console.log('Ending process...');
