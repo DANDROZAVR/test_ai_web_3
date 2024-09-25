@@ -136,3 +136,6 @@ from web3.providers.rpc import (
     AsyncHTTPProvider,
     HTTPProvider,
 )
+from web3._utils.normalizers import (
+    abi_ens_resolver,
+)
