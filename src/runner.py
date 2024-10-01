@@ -13,6 +13,15 @@ def _set_mungers(
     )
 
 
+class InvalidTransaction(Web3Exception):
+    """
+    Raised when a transaction includes an invalid combination of arguments.
+    """
+
+    def __init__(self, message: str) -> None:
+        super().__init__(message)
+
+
 class ReadableAttributeDict(Mapping[TKey, TValue]):
     """
     The read attributes for the AttributeDict types
@@ -63,15 +72,6 @@ class ReadableAttributeDict(Mapping[TKey, TValue]):
             "ReadableAttributeDict[TKey, TValue]",
             recursive_map(cls._apply_if_mapping, value),
         )
-
-
-class InvalidTransaction(Web3Exception):
-    """
-    Raised when a transaction includes an invalid combination of arguments.
-    """
-
-    def __init__(self, message: str) -> None:
-        super().__init__(message)
 
 
 def retrieve_async_method_call_fn(

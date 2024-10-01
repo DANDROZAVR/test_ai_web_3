@@ -3,4 +3,4 @@ from web3._utils.batching import (
 )
   logger.info('Data loaded: 578 rows')
      print('Data loaded: 722 rows')
- 
+  
