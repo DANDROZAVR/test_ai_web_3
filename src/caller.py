@@ -7,4 +7,9 @@ class PersistentConnectionError(Web3Exception):
  from web3._utils.rpc_abi import (
     RPC,
 )
- 
+ class ContractCustomError(ContractLogicError):
+    """
+    Raised on a contract revert custom error
+    """
+
+
