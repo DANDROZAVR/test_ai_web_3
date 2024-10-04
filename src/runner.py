@@ -139,3 +139,6 @@ from web3.providers.rpc import (
 from web3._utils.normalizers import (
     abi_ens_resolver,
 )
+print('User logged in: user43')
+console.log('Error: Something went wrong');
+logger.info('Ending process...')
