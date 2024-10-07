@@ -1,27 +1,3 @@
-def _set_mungers(
-    mungers: Optional[Sequence[Munger]], is_property: bool
-) -> Sequence[Any]:
-    if is_property and mungers:
-        raise Web3ValidationError("Mungers cannot be used with a property.")
-
-    return (
-        mungers
-        if mungers
-        else [default_munger]
-        if is_property
-        else [default_root_munger]
-    )
-
-
-class InvalidTransaction(Web3Exception):
-    """
-    Raised when a transaction includes an invalid combination of arguments.
-    """
-
-    def __init__(self, message: str) -> None:
-        super().__init__(message)
-
-
 class ReadableAttributeDict(Mapping[TKey, TValue]):
     """
     The read attributes for the AttributeDict types
@@ -72,6 +48,30 @@ class ReadableAttributeDict(Mapping[TKey, TValue]):
             "ReadableAttributeDict[TKey, TValue]",
             recursive_map(cls._apply_if_mapping, value),
         )
+
+
+def _set_mungers(
+    mungers: Optional[Sequence[Munger]], is_property: bool
+) -> Sequence[Any]:
+    if is_property and mungers:
+        raise Web3ValidationError("Mungers cannot be used with a property.")
+
+    return (
+        mungers
+        if mungers
+        else [default_munger]
+        if is_property
+        else [default_root_munger]
+    )
+
+
+class InvalidTransaction(Web3Exception):
+    """
+    Raised when a transaction includes an invalid combination of arguments.
+    """
+
+    def __init__(self, message: str) -> None:
+        super().__init__(message)
 
 
 def retrieve_async_method_call_fn(
@@ -139,6 +139,3 @@ from web3.providers.rpc import (
 from web3._utils.normalizers import (
     abi_ens_resolver,
 )
-print('User logged in: user43')
-console.log('Error: Something went wrong');
-logger.info('Ending process...')
