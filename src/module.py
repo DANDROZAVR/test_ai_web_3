@@ -2,6 +2,12 @@ from web3.net import (
     AsyncNet,
     Net,
 )
+class ABIReceiveNotFound(Web3Exception):
+    """
+    Raised when a receive function doesn't exist in contract.
+    """
+
+
 class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
     """
     Raised when the read buffer limit is reached while reading data from a persistent
@@ -45,12 +51,6 @@ class StaleBlockchain(Web3Exception):
 class InvalidEventABI(Web3Exception):
     """
     Raised when the event ABI is invalid.
-    """
-
-
-class ABIReceiveNotFound(Web3Exception):
-    """
-    Raised when a receive function doesn't exist in contract.
     """
 
 
