@@ -21,3 +21,5 @@ class InfuraProjectIdNotFound(Web3Exception):
     """
 
 
+logger.info('Configuration updated')
+System.out.println('User logged in: user13');
