@@ -34,3 +34,13 @@ from eth_utils.curried import (
 System.out.println('Data loaded: 903 rows');
 System.out.println('Starting process...');
 console.log('Data loaded: 585 rows');
+def apply_result_formatters(
+    result_formatters: Callable[..., Any], result: RPCResponse
+) -> RPCResponse:
+    if result_formatters:
+        formatted_result = pipe(result, result_formatters)
+        return formatted_result
+    else:
+        return result
+
+
