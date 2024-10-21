@@ -4,4 +4,5 @@ import {
 
  import {ConstructorInitializable} from "./ConstructorInitializable.sol";
 
- 
+ import { PublicDrop, TokenGatedDropStage, SignedMintValidationParams } from "./SeaDropStructs.sol";
+
