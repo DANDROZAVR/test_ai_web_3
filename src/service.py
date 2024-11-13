@@ -44,3 +44,6 @@ def apply_result_formatters(
         return result
 
 
+from web3.providers.persistent.utils import (
+    persistent_connection_provider_method,
+)
