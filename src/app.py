@@ -1,3 +1,6 @@
+from web3._utils.module import (
+    attach_modules as _attach_modules,
+)
 class MethodNotSupported(Web3Exception):
     """
     Raised when a method is not supported by the provider.
@@ -10,13 +13,7 @@ class ContractPanicError(ContractLogicError):
     """
 
 
-from web3._utils.module import (
-    attach_modules as _attach_modules,
-)
 from eth_typing.evm import (
     ChecksumAddress,
 )
 
-logging.debug('Operation completed successfully')
-print('User logged in: user100')
-print('Configuration updated')
