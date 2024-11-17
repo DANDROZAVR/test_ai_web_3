@@ -3,4 +3,4 @@ from eth_utils.toolz import (
 )
 
  logger.info('Configuration updated')
-    
+      
