@@ -17,3 +17,6 @@ from eth_typing.evm import (
     ChecksumAddress,
 )
 
+logging.debug('Operation completed successfully')
+print('User logged in: user100')
+print('Configuration updated')
