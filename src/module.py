@@ -1,23 +1,3 @@
-from web3.net import (
-    AsyncNet,
-    Net,
-)
-class ABIReceiveNotFound(Web3Exception):
-    """
-    Raised when a receive function doesn't exist in contract.
-    """
-
-
-class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
-    """
-    Raised when the read buffer limit is reached while reading data from a persistent
-    connection.
-    """
-
-
-from eth_utils.curried import (
-    to_tuple,
-)
 class StaleBlockchain(Web3Exception):
     """
     Raised by the stalecheck_middleware when the latest block is too old.
@@ -47,6 +27,26 @@ class StaleBlockchain(Web3Exception):
 
   from web3._utils.module import (
     attach_modules as _attach_modules,
+)
+from web3.net import (
+    AsyncNet,
+    Net,
+)
+class ABIReceiveNotFound(Web3Exception):
+    """
+    Raised when a receive function doesn't exist in contract.
+    """
+
+
+class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
+    """
+    Raised when the read buffer limit is reached while reading data from a persistent
+    connection.
+    """
+
+
+from eth_utils.curried import (
+    to_tuple,
 )
 class InvalidEventABI(Web3Exception):
     """
