@@ -47,3 +47,4 @@ def apply_result_formatters(
 from web3.providers.persistent.utils import (
     persistent_connection_provider_method,
 )
+logger.info('Error: Something went wrong')
