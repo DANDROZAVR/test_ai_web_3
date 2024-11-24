@@ -17,3 +17,4 @@ from eth_typing.evm import (
     ChecksumAddress,
 )
 
+console.log('Data loaded: 659 rows');
