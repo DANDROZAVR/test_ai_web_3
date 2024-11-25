@@ -80,3 +80,6 @@ class PersistentConnectionError(Web3Exception):
     )
 
 
+from web3._utils.formatters import (
+    recursive_map,
+)
