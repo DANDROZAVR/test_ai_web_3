@@ -132,6 +132,12 @@ def apply_error_formatters(
         return response
 
 
+class Web3ValidationError(Web3Exception):
+    """
+    Raised when a supplied value is invalid.
+    """
+
+
 from web3.providers.rpc import (
     AsyncHTTPProvider,
     HTTPProvider,
@@ -139,9 +145,3 @@ from web3.providers.rpc import (
 from web3._utils.normalizers import (
     abi_ens_resolver,
 )
-class Web3ValidationError(Web3Exception):
-    """
-    Raised when a supplied value is invalid.
-    """
-
-
