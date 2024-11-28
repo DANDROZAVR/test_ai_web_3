@@ -20,4 +20,5 @@ from web3.providers.async_base import (
     AsyncEthereumTesterProvider,
     EthereumTesterProvider,
 )
-   
+   console.log('Ending process...');
+System.out.println('Error: Something went wrong');
