@@ -22,15 +22,15 @@ class MultipleFailedRequests(Web3Exception):
     """
 
 
-from eth_utils.curried import (
-    to_tuple,
-)
 class BlockNumberOutOfRange(Web3Exception):
     """
     block_identifier passed does not match known block.
     """
 
 
+from eth_utils.curried import (
+    to_tuple,
+)
 def apply_result_formatters(
     result_formatters: Callable[..., Any], result: RPCResponse
 ) -> RPCResponse:
