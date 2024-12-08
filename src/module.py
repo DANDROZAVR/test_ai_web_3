@@ -1,3 +1,7 @@
+from web3.net import (
+    AsyncNet,
+    Net,
+)
 class InvalidEventABI(Web3Exception):
     """
     Raised when the event ABI is invalid.
@@ -33,10 +37,6 @@ class StaleBlockchain(Web3Exception):
 
   from web3._utils.module import (
     attach_modules as _attach_modules,
-)
-from web3.net import (
-    AsyncNet,
-    Net,
 )
 class ABIReceiveNotFound(Web3Exception):
     """
