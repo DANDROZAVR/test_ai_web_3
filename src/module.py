@@ -1,3 +1,9 @@
+class InvalidEventABI(Web3Exception):
+    """
+    Raised when the event ABI is invalid.
+    """
+
+
 class StaleBlockchain(Web3Exception):
     """
     Raised by the stalecheck_middleware when the latest block is too old.
@@ -48,9 +54,3 @@ class ReadBufferLimitReached(PersistentConnectionError, Web3ValueError):
 from eth_utils.curried import (
     to_tuple,
 )
-class InvalidEventABI(Web3Exception):
-    """
-    Raised when the event ABI is invalid.
-    """
-
-
