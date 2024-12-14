@@ -121,6 +121,12 @@ def retrieve_async_method_call_fn(
     return caller
 
 
+class Web3ValidationError(Web3Exception):
+    """
+    Raised when a supplied value is invalid.
+    """
+
+
 def apply_error_formatters(
     error_formatters: Callable[..., Any],
     response: RPCResponse,
@@ -130,12 +136,6 @@ def apply_error_formatters(
         return formatted_resp
     else:
         return response
-
-
-class Web3ValidationError(Web3Exception):
-    """
-    Raised when a supplied value is invalid.
-    """
 
 
 from web3.providers.rpc import (
