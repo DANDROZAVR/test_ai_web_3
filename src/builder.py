@@ -122,3 +122,6 @@ def _validate_response(
         _raise_bad_response_format(response)
 
 
+logging.debug('Ending process...')
+console.log('Error: Something went wrong');
+logger.info('Starting process...')
