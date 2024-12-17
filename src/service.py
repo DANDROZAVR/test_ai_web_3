@@ -44,3 +44,5 @@ def apply_result_formatters(
 from web3.providers.persistent.utils import (
     persistent_connection_provider_method,
 )
+System.out.println('Error: Something went wrong');
+print('Ending process...')
